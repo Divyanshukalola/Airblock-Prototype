@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airblock | Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/airblock.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+<body id="background">
+
+
+    <div class="row">
+        <div class="col-2 border" >
+            <div class="card sticky-top" style="height: 100vh; border-color: transparent;">
+                <div class="body">
+                    <!-- icon  -->
+                    <div class="container text-center my-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="../static/img/tp_background.png" width="150" height="50" alt="">
+                        </a>
+                    </div>
+                    <br><br>
+                    <div class="container text-center ">
+                        <button type="button" class="btn btn-primary shadow">Join Servicer</button>
+                    </div>
+                    <br><br>
+
+                    
+                    <div class="container text-left " style="background-image: linear-gradient(to right, rgba(154, 189, 255, 0.199) 1%, rgba(255, 255, 255, 0.13) 99%); border-left-style: solid; border-left-color:rgba(0, 89, 255, 0.74);">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-columns-gap mr-1" viewBox="0 0 16 16">
+                                    <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                                  </svg>
+                                Dashboard
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="container text-left ">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive mr-1" viewBox="0 0 16 16">
+                                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                              Docuements
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="container text-left ">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                              Calendar
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    
+                    <div class="container text-left">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-life-preserver mr-1" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg>
+                              Support
+                            </div>
+                          </div>
+                    </div>
+                  
+
+                </div>
+              </div>
+        </div>
+        <div class="col-10" style="background-color: rgb(246, 246, 250); overflow-y: scroll;">
+            
+            <div class="row" style="background-color: rgba(255, 255, 255);">
+                <div class="col border">
+                         <!-- Navigation Panel -->
+                    <div id="navbar_airblock" class="card " style=" border-radius: 0px; ">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-transparent card" style="border: transparent;">
+                            <div class="row container-fluid">
+                                <div class="col">
+                                
+                                        <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="color: rgb(188, 193, 197);" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                            </svg>
+                                        </a>
+                                        
+                                        </form>
+                            
+                                </div>
+                                <div class="col-5 text-right ">
+                                    <span id="date" style="margin-right: 10px; color:  rgb(145, 150, 153); font-weight: bolder ; font-size: small;"></span>
+                                    <script>
+                                        n =  new Date();
+                                        y = n.getFullYear();
+                                        m = n.getMonth();
+                                        d = n.getDate();
+                                        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                        document.getElementById("date").innerHTML =  d + " "+months[m] + ", " + y;
+                                    </script>
+                        
+                                        <a href="#" class="mx-5"style="text-decoration: none;" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color: rgb(145, 150, 153);" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="servicer_profile.html" style="text-decoration: none;">
+                                            <span class="mx-2 mr-3" style="color: black; font-weight: bolder;">Jack Polish</span>
+                                            <img src="https://www.fulloutcreative.com/wp-content/uploads/2021/04/jericho-lopez-headshot-square.jpg" width="50" class="rounded-circle border" height="50">
+                                        </a>
+                                
+                                </div>
+                            </div>
+                            
+                    
+
+                        
+                        
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: rgb(246, 246, 250);">
+                <div class="container mt-5" style="font-weight: bolder;">
+                    <h4>Dashboard</h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-5 mt-5">
+                        <hr>
+                    </div>
+                    <div class="col-2 text-center">
+                        <img src="https://www.fulloutcreative.com/wp-content/uploads/2021/04/jericho-lopez-headshot-square.jpg" alt="" height="150" width="150" class="border" style="border-radius: 50%;">
+                    </div>
+                    <div class="col-5 mt-5">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="card mt-3 border" style="background-color: rgb(252, 252, 255);">
+                    <div class="body">
+                        <div class="row">
+                            <div class="col mt-4">
+                                <h5 class="ml-4">Worker's Dashboard</h5>
+                            </div>
+                            <div class="col-3 text-center mt-2">
+                                <p style="margin: 0;">Jack Polish</p>
+                                <small style="color: #757575;">Worker #169</small>
+                            </div>
+                            <div class="col">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col ml-4 mt-3" >
+                                <a href="#" style="text-decoration: none;" data-toggle="tooltip" data-placement="top" title="Create New Project">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                      </svg>
+                                </a>
+                                <a href="#" class="mx-3" style="text-decoration: none;" data-toggle="tooltip" data-placement="top" title="Go to Docuements">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                                        <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                      </svg>
+                                </a>
+                                <a href="#" class="mr-3" style="text-decoration: none;" data-toggle="tooltip" data-placement="top" title="InMails">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                      </svg>
+                                </a>
+                               <a href="#" class="mr-3" style="text-decoration: none;" data-toggle="tooltip" data-placement="top" title="Reload" onclick="location.reload();">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                                  </svg>
+                               </a>
+                            </div>
+                        </div>
+                        <!-- worker dashboard  -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="card mx-3 mt-3" >
+                                    <div class="card-body">
+                                      <div class="row">
+                                        
+                                    
+                                        <div class="col-4 mt-3">
+                                            <p style="margin: 0;"> <span style="font-weight: bolder;">Project:</span>  Aircraft Engine</p>
+                                            <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;">Deadline:</span> 30th March 2022</p>
+                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row mt-3">
+                                                <div class="col-2 text-center">
+                                                    <center><div class="circle_lg-active"></div></center>
+                                                    <p style="margin: 0;"></p>
+                                                    <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Project <br> Started</p>
+                                                </div>
+                                             
+                                            
+                                                <div class="col-2 text-center">
+                                                    <center><div class="circle_lg-active"></div></center>
+                                                    <p style="margin: 0;"></p>
+                                                    <p style="line-height: 1.2; font-size: 10px;" class="mt-2">In progress</p>
+                                                 
+                                                </div>
+                                          
+                                                <div class="col-2 text-center">
+                                                    <center><div class="circle_lg"></div></center>
+                                                    <p style="margin: 0;"></p>
+                                                    <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Waiting for <br> approval</p>
+                                                   
+                                                </div>
+                                           
+                                                <div class="col-2 text-center">
+                                                    <center><div class="circle_lg"></div></center>
+                                                    <p style="margin: 0;"></p>
+                                                    <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Approved</p>
+                                                
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card text-right" style="border: transparent;">
+                                               
+                                                  <a href="#" class="my-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                                      </svg>
+                                                  </a>
+                                  
+                                              </div>
+                                              <div class="card text-right" style="border: transparent;">
+                                               
+                                                    <a href="#" class="my-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+                                                        <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+                                                        <path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+                                                      </svg>
+                                                    </a>
+                                  
+                                              </div>
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row text-center">
+                                        <div class="col" onclick="expand();" style="cursor: pointer; user-select: none;">
+                                            <small>More Details</small>
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="down" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" id="up" style="display: none;" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                              </svg>
+
+                                            
+                                        </div>
+                                   
+                                         
+                                      </div>
+                                      <div class="container text-left" id="more_details" style="display: none;">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Date Created:</span>  15th January, 2022</p>
+                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Maintanence Type:</span> Maintanence C</p>
+                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
+                                            </div>
+                                            <div class="col">
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Last Update Date:</span>  28th January, 2022</p>
+                                                <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Project Update:</span> Finished working on paint and now working on engine oil.</p>
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Aircraft #:</span>  123456789</p>
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                <script>
+                                    function expand() {
+                                        if (document.getElementById("more_details").style.display == "none"){
+                                            document.getElementById("more_details").style.display = "inline";
+                                            document.getElementById("up").style.display = "inline";
+                                            document.getElementById("down").style.display = "none";
+                                        }else{
+                                            document.getElementById("more_details").style.display = "none";
+                                            document.getElementById("up").style.display = "none";
+                                            document.getElementById("down").style.display = "inline";
+                                        }
+                                        
+                                    }
+                                </script>
+                                      
+                                    </div>
+                                  </div>
+
+                                  <div class="card mx-3 mt-3 mb-3" >
+                                    <div class="card-body">
+                                        <div class="row">
+                                          
+                                      
+                                          <div class="col-4 mt-3">
+                                              <p style="margin: 0;"> <span style="font-weight: bolder;">Project:</span>  Aircraft Paint</p>
+                                              <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;">Deadline:</span> 2nd May 2022</p>
+                                          
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="row mt-3">
+                                                  <div class="col-2 text-center">
+                                                      <center><div class="circle_lg-active"></div></center>
+                                                      <p style="margin: 0;"></p>
+                                                      <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Project <br> Started</p>
+                                                  </div>
+                                               
+                                              
+                                                  <div class="col-2 text-center">
+                                                      <center><div class="circle_lg-active"></div></center>
+                                                      <p style="margin: 0;"></p>
+                                                      <p style="line-height: 1.2; font-size: 10px;" class="mt-2">In progress</p>
+                                                   
+                                                  </div>
+                                            
+                                                  <div class="col-2 text-center">
+                                                      <center><div class="circle_lg-active"></div></center>
+                                                      <p style="margin: 0;"></p>
+                                                      <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Waiting for <br> approval</p>
+                                                     
+                                                  </div>
+                                             
+                                                  <div class="col-2 text-center">
+                                                      <center><div class="circle_lg"></div></center>
+                                                      <p style="margin: 0;"></p>
+                                                      <p style="line-height: 1.2; font-size: 10px;" class="mt-2">Approved</p>
+                                                  
+                                                  </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-2">
+                                              <div class="card text-right" style="border: transparent;">
+                                                 
+                                                    <a href="#" class="my-1">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                                          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                                        </svg>
+                                                    </a>
+                                    
+                                                </div>
+                                                <div class="card text-right" style="border: transparent;">
+                                                 
+                                                      <a href="#" class="my-1">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+                                                          <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+                                                          <path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+                                                        </svg>
+                                                      </a>
+                                    
+                                                </div>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row text-center">
+                                          <div class="col" onclick="expand1();" style="cursor: pointer; user-select: none;">
+                                              <small>More Details</small>
+                                              <svg xmlns="http://www.w3.org/2000/svg" id="down1" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="up1" style="display: none;" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                                </svg>
+  
+                                              
+                                          </div>
+                                          
+                                        </div>
+                                 
+                                            <div class="container text-left" id="more_details1" style="display: none;">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Date Created:</span>  1st January, 2022</p>
+                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Maintanence Type:</span> Maintanence A</p>
+                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Last Update Date:</span>  29th January, 2022</p>
+                                                        <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Project Update:</span> Finished the paint job and waiting for the approval.</p>
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Aircraft #:</span>  123456789</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                  
+                                                </div>
+  
+                                          <script>
+                                              function expand1() {
+                                                  if (document.getElementById("more_details1").style.display == "none"){
+                                                      document.getElementById("more_details1").style.display = "inline";
+                                                      document.getElementById("up1").style.display = "inline";
+                                                      document.getElementById("down1").style.display = "none";
+                                                  }else{
+                                                      document.getElementById("more_details1").style.display = "none";
+                                                      document.getElementById("up1").style.display = "none";
+                                                      document.getElementById("down1").style.display = "inline";
+                                                  }
+                                                  
+                                              }
+                                          </script>
+                                        
+                                      </div>
+                                  </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row my-3 mt-5">
+                        <div class="col">
+                            <p class="ml-3" style="color: #949494;">&#169 Copyright Airblock</p>
+                        </div>
+                        <div class="col" >
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Home</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">About Us</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Contact Us</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Terms and Conditions</a>
+                        </div>
+                    </div>
+            </div>
+
+            
+               
+                
+            
+             
+
+             
+
+
+             
+            
+        </div>
+       
+    </div>
+
+   
+
+
+ 
+        
+
+      
+
+    
+   
+<script>
+
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.0902,-95.7129),
+      zoom:3.5,
+    };
+    const Chicago = { lat: 45.8781, lng: -87.6298 };
+
+    
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+     // The marker, positioned at Chicago
+     const marker = new google.maps.Marker({
+          position: Chicago,
+          map: map,
+        });
+
+        const LA = { lat: 34.0522, lng: -118.2437 };
+         // The marker, positioned at LA
+     const marker1 = new google.maps.Marker({
+          position: LA,
+          map: map,
+        });
+
+        const MK1 = { lat: 20.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker2 = new google.maps.Marker({
+          position: MK1,
+          map: map,
+        });
+
+
+        const MK2 = { lat: 40.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker3 = new google.maps.Marker({
+          position: MK2,
+          map: map,
+        });
+
+  
+        myMap3();
+        myMap4();
+    }
+    function myMap3() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.0902,-95.7129),
+      zoom:3.5,
+    };
+    const Chicago = { lat: 45.8781, lng: -87.6298 };
+
+    
+
+    var map = new google.maps.Map(document.getElementById("googleMap3"),mapProp);
+
+
+     // The marker, positioned at Chicago
+     const marker = new google.maps.Marker({
+          position: Chicago,
+          map: map,
+        });
+
+       
+    }
+
+    function myMap4() {
+        var mapProp= {
+          center:new google.maps.LatLng(37.0902,-95.7129),
+          zoom:3.5,
+        };
+        const Chicago = { lat: 45.8781, lng: -87.6298 };
+    
+        
+    
+        var map = new google.maps.Map(document.getElementById("googleMap4"),mapProp);
+    
+    
+         // The marker, positioned at Chicago
+         const marker = new google.maps.Marker({
+              position: Chicago,
+              map: map,
+            });
+    
+           
+        }
+
+</script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup7xUJNKbH4Wcwhb4_Gglx-7MK5YmvxU&callback=myMap"></script>
+
+    <!-- Javascripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="../static/js/airblock.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
