@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airblock | Servicer</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/airblock.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+    
+
+
+
+
+    
+</head>
+<body id="background">
+    <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10">
+
+             <!-- Navigation Panel -->
+             <div id="navbar_airblock" class="card mx-3 my-3 shadow sticky-top " style="border-radius: 20px; border: transparent; background-color: rgba(255, 255, 255, 0.863); backdrop-filter: blur(6px);">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent card"  style="border: transparent;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../static/img/tp_background.png" width="150" height="50" alt="">
+                        </a>
+                    <!-- <a class="navbar-brand" href="#"><span style="font-size: 15px; line-height: 0%;">Airblock <br class="py-0 my-0">Technologies</span> </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ml-5 mr-3">
+                            <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Tracker</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Map</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Find Me
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Find Servicer</a></li>
+                            <li><a class="dropdown-item" href="#">Find Parts</a></li>
+                            </ul>
+                        </li>
+                    
+                        </ul>
+
+                        
+                    </div>
+
+                    <div >
+                        <a href="#" class="mx-2"style="text-decoration: none;" >
+                            <img src="../static/img/bell.png" width="18" height="20">
+                        </a>
+                        <a href="../servicer_profile.html" style="text-decoration: none;">
+                            <span class="mx-2" style="color: black;">Joanriger</span>
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" width="50" class="rounded-circle border" height="50">
+                        </a>
+                        
+                    </div>
+                    </div>
+                </nav>
+            </div>
+
+          
+
+        
+
+
+            <!-- Work Order -->
+            <div class="opt" id="WRO">
+               
+
+
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 style="font-weight: bold;">Findings - Work Order #16</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <button type="button" class="btn btn-secondary">Report All</button>
+                            </div>
+                           
+                        </div>
+                       
+
+                        <div class="row">
+                            <div class="card-columns mx-3 my-3 bg-white">
+                                <div class="card" style="opacity: 0.5;">
+                                  <img class="card-img-top" src="../static/img/findings/finding1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Fule Tube fracture - 0</h5>
+                                    <p class="card-text">2 cm cut in the tube.</p>
+                                  </div>
+                                  <div class="card-footer">
+                                      <div class="row">
+                                        <div class="col-8">
+                                            <small class="text-muted">Last updated 8 days ago</small>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a href="#" data-toggle="modal" data-target="#check" style="pointer-events: none;">
+                                            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png" width="40"/>
+                                            </a>
+                                        </div>
+                                      </div>
+                                   
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="../static/img/findings/finding2.jpeg" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Fuel tank fracture - 1</h5>
+                                    <p class="card-text">2 inch fuel tank crack.</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <small class="text-muted">Last updated 3 days ago</small>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a href="#" data-toggle="modal" data-target="#check">
+                                            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png" width="40"/>
+                                            </a>
+                                        </div>
+                                      </div>
+                                   
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="../static/img/findings/finding3.jpeg" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Color - 2</h5>
+                                    <p class="card-text">Color is beeing erroded from the metal.</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <small class="text-muted">Last updated 3 min ago</small>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a href="#" data-toggle="modal" data-target="#check">
+                                            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png" width="40"/>
+                                            </a>   
+                                        </div>
+                                      </div>
+                                   
+                                  </div>
+                                </div>
+                              
+
+                              </div>
+                             
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr> 
+                            </div>
+                            <div class="col-2 mt-2 text-center">
+                                <p style="font-size: 13px; color: grey;" >Add Findings</p>
+                            </div>
+                            <div class="col">
+                                <hr> 
+                            </div>
+                        </div>
+                        <div class="row  mx-3 my-3" >
+                           
+                                <div class="card-columns">
+                                 
+                                    <!-- add a new findings -->
+                                    <a href="#" data-toggle="modal" data-target="#addfindings">
+                                    <div class="card">
+                                      <img class="card-img-top" src="../static/img/add_image.png" alt="Card image cap">
+                                      <div class="card-body">
+                                        <h5 class="card-title" style="color: black;">Add Findings</h5>
+                                        <p class="card-text" style="color: black;">Remeber to fill out each and every details as mentioend!</p>
+                                      </div>
+                                     
+                                    </div>
+                                </a>
+                                </div>
+                          
+                           
+                          </div>
+                      
+
+                    </div>
+
+                   
+                </div>
+            </div>
+
+        
+
+
+            <!-- Doc View WRO -->
+            <div class="modal fade" id="docview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Work Order Document</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="../docs/wro.pdf#toolbar=0" width="100%" height="500px">
+                        </iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+            <!-- check -->
+            <div class="modal fade" id="check" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Report Findings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                       Are you sure you want to report this findings?
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Report</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+
+<!-- Add findings -->
+<div class="modal fade" id="addfindings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">List your Findings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <p><b>Date: </b><script> document.write(new Date().toDateString()); </script></p>
+                
+            </div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Add a picture</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Part Number:</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Part Number">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Serial Number:</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Serial Number">
+                  </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Add a description</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+
+                  <div class="form-check">
+                    
+                    <label class="form-check-label" for="exampleCheck1">Airworthiness status</label>
+                    <select class="form-control" >
+                        <option>Yes</option>
+                        <option>No</option>
+                       
+                      </select>
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Findings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+          
+
+            <!-- footer -->
+            <footer>
+                <div class="row mx-5 my-3 mt-5">
+                    <div class="col">
+                        <p style="color: #949494;">&#169 Copyright Airblock</p>
+                    </div>
+                    <div class="col-7" >
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Home</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">About Us</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Contact Us</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Terms and Conditions</a>
+                    </div>
+                </div>
+            
+            </footer>
+
+
+
+
+
+
+
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+   
+
+
+    <script>
+         function createwro_show() {
+        
+        if (document.getElementById('createwro').style.display == 'block'){
+            document.getElementById('icon').classList.remove('createwro_show');
+            document.getElementById('icon').classList.add('createwro_hide');
+            document.getElementById('createwro').style.display = 'none';
+        }else{
+            document.getElementById('icon').classList.remove('createwro_hide');
+            document.getElementById('icon').classList.add('createwro_show');
+            document.getElementById('createwro').style.display = 'block';
+        }
+  
+ 
+    }
+    </script>
+   
+
+
+
+
+
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="../static/js/airblock.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup7xUJNKbH4Wcwhb4_Gglx-7MK5YmvxU&callback=myMap"></script>
+
+</body>
+</html>

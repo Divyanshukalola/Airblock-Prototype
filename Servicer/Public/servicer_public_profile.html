@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airblock | Servicer</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/airblock.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+    
+
+
+
+
+    
+</head>
+<body id="background">
+    <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10">
+
+             <!-- Navigation Panel -->
+             <div id="navbar_airblock" class="card mx-3 my-3 shadow sticky-top " style="border-radius: 20px; border: transparent; background-color: rgba(255, 255, 255, 0.863); backdrop-filter: blur(6px);">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent card"  style="border: transparent;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../../static/img/tp_background.png" width="150" height="50" alt="">
+                        </a>
+                    <!-- <a class="navbar-brand" href="#"><span style="font-size: 15px; line-height: 0%;">Airblock <br class="py-0 my-0">Technologies</span> </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ml-5 mr-3">
+                            <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Tracker</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="#">Map</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Find Me
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Find Servicer</a></li>
+                            <li><a class="dropdown-item" href="#">Find Parts</a></li>
+                            </ul>
+                        </li>
+                    
+                        </ul>
+
+                        
+                    </div>
+
+                    <div >
+                        <a href="../../Common/notification.html" class="mx-2"style="text-decoration: none;" >
+                            <img src="../../static/img/bell.png" width="18" height="20">
+                        </a>
+                        <a href="../servicer_profile.html" style="text-decoration: none;">
+                            <span class="mx-2" style="color: black;">Joanriger</span>
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" width="50" class="rounded-circle border" height="50">
+                        </a>
+                        
+                    </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                
+        
+                <div class="card-header" style="background-image: url('https://www.cashadvance6online.com/data/archive/img/1457688761.jpeg');border-radius: 20px 20px 0 0; height: 230px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" style="border-radius: 50%; border: 2px solid white; margin-top: 10%;" width="150">
+                </div>
+               
+                <div class="card-body mx-3 my-3" style="height: auto;"> 
+                    <div class="row">
+                        <div class="col text-right">
+                            <div class="row">
+                                <style>
+                                    .checked {
+                                      color: orange;
+                                      font-size: 20px;
+                                    }
+                                    .unchecked{
+                                        color: #adadadad;
+                                        font-size: 20px;
+                                    }
+                                    </style>
+    
+    
+                                <div class="col text-right">
+                                    <p style="color: #adadadad;">Airblock Ratings: </p>
+                                </div>
+                                <div class="col-2 text-left">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star unchecked"></span>
+                                    <span class="fa fa-star unchecked"></span>
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                    </div>
+
+                   <div class="row">
+                        <div class="col-2 text-left ml-2">
+                            <h4 style="font-weight: bolder;">Joanriger</h4>
+                            
+                        </div>
+                        <div class="col">
+                            <p style="color: #adadadad;">Chicago, Illinois, United States</p>
+                        </div>
+                   </div>
+
+                   <div class="row ">
+                    <div class="col ml-2">
+                        <p>I love to repair aircrafts and I am a professional computer programmer.</p>
+                    </div>
+                   </div>
+
+                   <div class="row ">
+                    <div class="col ml-2">
+                        <p style="color: #adadadad;">Status: Public</p>
+                    </div>
+                   </div>
+                  
+
+                </div>
+               
+      
+            </div>
+
+           
+
+            <!-- About -->
+            <div class="opt" id="About" style="display:block"> 
+                <!-- About -->
+                <div class="card mx-3 my-3 bg-white shadow"  style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+                        <div class="row">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">About</h5>
+                            
+                                <p>I am a servicer’s company and I am servicing plans for more than 5 years. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- overview -->
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+                        <div class="row">
+                            <div class="col-2">
+                                <h5 style="font-weight: bold;">Overview</h5>
+                            </div>
+                            <div class="col">
+                                <p style="color: #adadadad;">Open Source Light Sport Aircraft</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col">
+                                <p style="font-weight: bold; line-height: 5px;">Website:</p>
+                                <a href="#" style="color: #00A3FF; text-decoration: underline;line-height: 5px;">www.Joanriger.com</a>
+                            </div>
+                        </div>
+
+                        <div class="row my-4">
+                            <div class="col">
+                                <p style="font-weight: bold; line-height: 5px;">Company Size:</p>
+                                <p style="color: #7C7C7C; text-decoration: none;line-height: 5px;">2 - 4 servicers</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row my-4">
+                            <div class="col">
+                                <p style="font-weight: bolder; line-height: 5px;">Who are we?</p>
+                                <p style="color: black; text-decoration: none;">We are airblock and service all the various types of aircrafts that is known to mankind. We are very proud of what we do and aim to make the aviation industry better and digitally organised. </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- certifactions -->
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 mt-3">
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">Certifications</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body mx-3 mb-3">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="card" style="border-radius: 15px;">
+                                    <iframe class="card-img-top" src="../../docs/AFAC.pdf#toolbar=0">
+                                    </iframe>
+                                    <div class="card-body">
+                                      <h5 class="card-title">AFAC Certifications</h5>
+                                      <div class="row">
+                                        <div class="col">
+                                            <p><b>Country: </b><img src="../../static/img/flags/mexico.png" alt="" height="30px"></p>
+                                        </div>
+                                    </div>
+                                      <div class="row">
+                                        <div class="col">
+                                            <p style="font-size: 15px;"><b>Issue Date: </b>July 31, 2019</p>
+                                        </div>
+                                        <div class="col">
+                                            <p style="font-size: 15px;"><b>Effective Date: </b>July 31, 2021</p>
+                                        </div>
+                                      </div>
+                                      
+                                     
+
+                                      <a href="#" data-toggle="modal" data-target="#docview_afac" class="btn btn-primary">View Full Size</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col text-center">
+                                <div class="card" style="border-radius: 15px;">
+                                    <iframe class="card-img-top" src="../../docs/INAC.pdf#toolbar=0">
+                                    </iframe>
+                                    <div class="card-body">
+                                      <h5 class="card-title">INAC Certifications</h5>
+                                      <div class="row">
+                                        <div class="col">
+                                            <p><b>Country: </b><img src="../../static/img/flags/venezuela.png" alt="" height="30px"></p>
+                                        </div>
+                                    </div>
+                                      <div class="row">
+                                        <div class="col">
+                                            <p style="font-size: 15px;"><b>Issue Date: </b>May 31, 2019</p>
+                                        </div>
+                                        <div class="col">
+                                            <p style="font-size: 15px;"><b>Effective Date: </b>May 31, 2021</p>
+                                        </div>
+                                       
+                                      </div>
+                                      
+                                      
+
+                                      <a href="#" data-toggle="modal" data-target="#docview_inac" class="btn btn-primary">View Full Size</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- aircraft services -->
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">Aircraft Services</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="card my-2 bg-white border" style="border-radius: 10px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;"><b>Lear Jet</b></p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">20’s Series</p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">20,20B, 21, 21B, 25E, 26F, 28</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+
+
+
+
+
+                                <div class="card my-2 bg-white border" style="border-radius: 10px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;"><b>Lear Jet</b></p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">30’s Series</p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">30,30B, 31, 31B, 35E, 36F, 38</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card my-2 bg-white border" style="border-radius: 10px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;"><b>Lear Jet</b></p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">40’s Series</p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">40,40B, 41, 41B, 45E, 46F, 48</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card my-2 bg-white border" style="border-radius: 10px;">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;"><b>Lear Jet</b></p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">60’s Series</p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <p style="line-height: 0px;">60,60B, 61, 61B, 65E, 66F, 68</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>   
+                
+                
+
+
+                <!-- service levels -->
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">Service Levels</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col-2 text-left">
+                                <p><b>Level A : </b></p>
+                            </div>
+                            <div class="col text-left">
+                            <p>We are airblock and service all the various types of aircrafts that is known to mankind. </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2 text-left">
+                                <p><b>Level B : </b></p>
+                            </div>
+                            <div class="col text-left">
+                            <p>We are airblock and service all the various types of aircrafts that is known to mankind. </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2 text-left">
+                                <p><b>Level C : </b></p>
+                            </div>
+                            <div class="col text-left">
+                            <p>We are airblock and service all the various types of aircrafts that is known to mankind. </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2 text-left">
+                                <p><b>Level D : </b></p>
+                            </div>
+                            <div class="col text-left">
+                            <p>We are airblock and service all the various types of aircrafts that is known to mankind. </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>   
+
+                <!-- map -->
+                <div class="card mx-3 my-3 bg-white shadow" style="border-radius: 20px; border: transparent;">
+                    <div class="card-body mx-3 my-3">
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">Map</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div id="googleMap" style="width:100%;height:400px;border-radius: 10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments -->
+
+                <div class="card mx-3 my-3 bg-white shadow"  style="border-radius: 20px; border: transparent; ">
+                    <div class="card-body mx-3 my-3" >
+                        <div class="row mb-3">
+                            <div class="col">
+                                <h5 style="font-weight: bold;">Comments</h5>
+                            </div>
+                        </div>
+                        <div style="height: 600px; overflow-y: scroll;">
+                             <!-- Comment1 -->
+                        <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2014/07/Yumi_Wilson_L7155_SQ.jpg.jpeg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Salie J</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                         <!-- Comment1 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://headshots.thelightcommittee.com/wp-content/uploads/2019/08/professions-that-can-benefit-from-headshots.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Millie Adams</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                         <!-- Comment2 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://chicagophotovideo.com/wp-content/uploads/bfi_thumb/chicago-headshot-and-portrait-photographer-30ey9rd68o0gkjacddwwwjzpmf64mu7vh3hvh7ea03hf4ubym.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Jessy Miller</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                         <!-- Comment3 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://headshots.thelightcommittee.com/wp-content/uploads/2019/08/theatrical-actor-headshots-los-angeles-240x300.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Samuel Adams</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                          <!-- Comment1 -->
+                          <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2014/07/Yumi_Wilson_L7155_SQ.jpg.jpeg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Salie J</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                         <!-- Comment1 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://headshots.thelightcommittee.com/wp-content/uploads/2019/08/professions-that-can-benefit-from-headshots.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Millie Adams</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                         <!-- Comment2 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://chicagophotovideo.com/wp-content/uploads/bfi_thumb/chicago-headshot-and-portrait-photographer-30ey9rd68o0gkjacddwwwjzpmf64mu7vh3hvh7ea03hf4ubym.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Jessy Miller</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                        <span class="fa fa-star unchecked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                         <!-- Comment3 -->
+                         <div class="row" >
+                            <div class="col-1 text-right">
+                                <img src="https://headshots.thelightcommittee.com/wp-content/uploads/2019/08/theatrical-actor-headshots-los-angeles-240x300.jpg" width="50" height="50" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="col mt-2">
+                                <p style="line-height: 10px;"><span style="color: #0094FF;">Samuel Adams</span><span style="color: #adadadad;"> - Wed 2 Sept 2020, 7:30 pm</span></p>
+                                <p style="line-height: 10px;"><span>This servicer is the best I have ever had so far</span></p>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <style>
+                                        .checked1 {
+                                          color: orange;
+                                          font-size: 15px;
+                                        }
+                                        .unchecked1{
+                                            color: #adadadad;
+                                            font-size: 15px;
+                                        }
+                                        </style>
+        
+        
+                                    <div class="col text-right mt-2">
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                        <span class="fa fa-star checked1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </div>
+
+                       
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+          
+
+            <!-- footer -->
+            <footer>
+                <div class="row mx-5 my-3 mt-5">
+                    <div class="col">
+                        <p style="color: #949494;">&#169 Copyright Airblock</p>
+                    </div>
+                    <div class="col-7" >
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Home</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">About Us</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Contact Us</a>
+                        <a href="#" style="text-decoration: none; color: black;" class="mx-4">Terms and Conditions</a>
+                    </div>
+                </div>
+            
+            </footer>
+
+
+
+
+
+
+
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+
+
+
+      <!-- Doc View WRO -->
+      <div class="modal fade" id="docview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Work Order Document</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="../../docs/wro.pdf#toolbar=0" width="100%" height="500px">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- Doc View AFAC -->
+    <div class="modal fade" id="docview_afac" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Work Order Document</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="../../docs/AFAC.pdf#toolbar=0" width="100%" height="500px">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- Doc View INAC -->
+    <div class="modal fade" id="docview_inac" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Work Order Document</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="../../docs/INAC.pdf#toolbar=0" width="100%" height="500px">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+   
+
+
+    <script>
+        function openDetails(elmnt,item) {
+          var i;
+          var x = document.getElementsByClassName("opt");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            
+
+          }
+
+          var x = document.getElementsByClassName("tags");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.textDecoration = "none";
+            
+
+          }
+          document.getElementById(item).style.display = "block";
+          elmnt.style.textDecoration = "underline";
+     
+        }
+
+
+
+
+
+
+
+
+
+
+        function createwro_show() {
+        
+            if (document.getElementById('createwro').style.display == 'block'){
+                document.getElementById('icon').classList.remove('createwro_show');
+                document.getElementById('icon').classList.add('createwro_hide');
+                document.getElementById('createwro').style.display = 'none';
+            }else{
+                document.getElementById('icon').classList.remove('createwro_hide');
+                document.getElementById('icon').classList.add('createwro_show');
+                document.getElementById('createwro').style.display = 'block';
+            }
+      
+     
+        }
+
+
+
+
+  
+    </script>
+
+
+
+<!-- google maps  -->
+
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.0902,-95.7129),
+      zoom:3.5,
+    };
+    const Chicago = { lat: 45.8781, lng: -87.6298 };
+
+    
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+     // The marker, positioned at Chicago
+     const marker = new google.maps.Marker({
+          position: Chicago,
+          map: map,
+        });
+
+        const LA = { lat: 34.0522, lng: -118.2437 };
+         // The marker, positioned at LA
+     const marker1 = new google.maps.Marker({
+          position: LA,
+          map: map,
+        });
+
+        const MK1 = { lat: 20.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker2 = new google.maps.Marker({
+          position: MK1,
+          map: map,
+        });
+
+
+        const MK2 = { lat: 40.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker3 = new google.maps.Marker({
+          position: MK2,
+          map: map,
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup7xUJNKbH4Wcwhb4_Gglx-7MK5YmvxU&callback=myMap"></script>
+      
+
+
+
+
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="../static/js/airblock.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  
+</body>
+</html>
