@@ -14,6 +14,12 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
+    <style>
+        #m_details:hover{
+            font-weight: bolder;
+        }
+    </style>
+
 </head>
 <body id="background">
 
@@ -149,27 +155,36 @@
                     </div>
                     <div class="col-2 text-center">
                         <img src="https://www.fulloutcreative.com/wp-content/uploads/2021/04/jericho-lopez-headshot-square.jpg" alt="" height="150" width="150" class="border" style="border-radius: 50%;">
+                        
                     </div>
                     <div class="col-5 mt-5">
                         <hr>
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col mt-4">
+                     
+                    </div>
+                    <div class="col-3 text-center mt-2">
+                        <p style="margin: 0;">Jack Polish</p>
+                        <small style="color: #757575;">ID: #169</small>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+
+
                 <div class="card mt-3 border" style="background-color: rgb(252, 252, 255);">
                     <div class="body">
-                        <div class="row">
-                            <div class="col mt-4">
-                                <h5 class="ml-4">Worker's Dashboard</h5>
-                            </div>
-                            <div class="col-3 text-center mt-2">
-                                <p style="margin: 0;">Jack Polish</p>
-                                <small style="color: #757575;">Worker #169</small>
-                            </div>
-                            <div class="col">
-
-                            </div>
-                        </div>
-
+                       
+                <div class="row">
+                    <div class="col mt-4">
+                        <h5 class="ml-4">Worker's Dashboard</h5>
+                    </div>
+                   
+                </div>
                         <div class="row">
                             <div class="col ml-4 mt-3" >
                                 <a href="#" style="text-decoration: none;" data-toggle="tooltip" data-placement="top" title="Create New Project">
@@ -204,8 +219,8 @@
                                         
                                     
                                         <div class="col-4 mt-3">
-                                            <p style="margin: 0;"> <span style="font-weight: bolder;">Project:</span>  Aircraft Engine</p>
-                                            <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;">Deadline:</span> 30th March 2022</p>
+                                            <p style="margin: 0;"> <span style="font-weight:1000" class="mr-1">Project:</span>  Aircraft Engine</p>
+                                            <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;" class="mr-1">Deadline:</span> 30th March 2022</p>
                                         
                                         </div>
                                         <div class="col-6">
@@ -264,7 +279,7 @@
                                       <hr>
                                       <div class="row text-center">
                                         <div class="col" onclick="expand();" style="cursor: pointer; user-select: none;">
-                                            <small>More Details</small>
+                                            <small id="m_details">More Details</small>
                                             <svg xmlns="http://www.w3.org/2000/svg" id="down" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                                               </svg>
@@ -280,14 +295,14 @@
                                       <div class="container text-left" id="more_details" style="display: none;">
                                         <div class="row">
                                             <div class="col">
-                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Date Created:</span>  15th January, 2022</p>
-                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Maintanence Type:</span> Maintanence C</p>
-                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Date Created:</span>  15th January, 2022</p>
+                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Maintanence Type:</span> Maintanence C</p>
+                                      <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
                                             </div>
                                             <div class="col">
-                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Last Update Date:</span>  28th January, 2022</p>
-                                                <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Project Update:</span> Finished working on paint and now working on engine oil.</p>
-                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Aircraft #:</span>  123456789</p>
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Last Update Date:</span>  28th January, 2022</p>
+                                                <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Project Update:</span> Finished working on paint and now working on engine oil.</p>
+                                                <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Aircraft #:</span>  123456789</p>
                                                 
                                             </div>
                                         </div>
@@ -317,8 +332,8 @@
                                           
                                       
                                           <div class="col-4 mt-3">
-                                              <p style="margin: 0;"> <span style="font-weight: bolder;">Project:</span>  Aircraft Paint</p>
-                                              <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;">Deadline:</span> 2nd May 2022</p>
+                                              <p style="margin: 0;"> <span style="font-weight: bolder;" class="mr-1">Project:</span>  Aircraft Paint</p>
+                                              <p style="margin: 0; font-size: medium;"><span style="font-weight: bolder;" class="mr-1">Deadline:</span> 2nd May 2022</p>
                                           
                                           </div>
                                           <div class="col-6">
@@ -377,7 +392,7 @@
                                         <hr>
                                         <div class="row text-center">
                                           <div class="col" onclick="expand1();" style="cursor: pointer; user-select: none;">
-                                              <small>More Details</small>
+                                              <small id="m_details">More Details</small>
                                               <svg xmlns="http://www.w3.org/2000/svg" id="down1" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                                                 </svg>
@@ -393,14 +408,14 @@
                                             <div class="container text-left" id="more_details1" style="display: none;">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Date Created:</span>  1st January, 2022</p>
-                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Maintanence Type:</span> Maintanence A</p>
-                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Date Created:</span>  1st January, 2022</p>
+                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Maintanence Type:</span> Maintanence A</p>
+                                              <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Docuements Repository:</span> <a href="#">Link to Repository</a></p>
                                                     </div>
                                                     <div class="col">
-                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Last Update Date:</span>  29th January, 2022</p>
-                                                        <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;">Project Update:</span> Finished the paint job and waiting for the approval.</p>
-                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;">Aircraft #:</span>  123456789</p>
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Last Update Date:</span>  29th January, 2022</p>
+                                                        <p style="margin: 0; font-size: small;"><span style="font-weight: bolder;" class="mr-1">Project Update:</span> Finished the paint job and waiting for the approval.</p>
+                                                        <p style="margin: 0; font-size: small;"> <span style="font-weight: bolder;" class="mr-1">Aircraft #:</span>  123456789</p>
                                                         
                                                     </div>
                                                 </div>
