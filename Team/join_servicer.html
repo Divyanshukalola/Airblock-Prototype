@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airblock | Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/airblock.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+        .nav-verticle:hover{
+            background-image: linear-gradient(to right, rgba(153, 153, 153, 0.199) 1%, rgba(255, 255, 255, 0.13) 99%);
+            cursor: pointer;
+        }
+
+        .hover_blur:hover{
+            background-color: #75757538;
+        }
+
+
+
+
+        * { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+    </style>
+
+</head>
+<body id="background">
+
+
+    <div class="row">
+        <div class="col-2 border" >
+            <div class="card sticky-top" style="height: 100vh; border-color: transparent;">
+                <div class="body">
+                    <!-- icon  -->
+                    <div class="container text-center my-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="../static/img/tp_background.png" width="150" height="50" alt="">
+                        </a>
+                    </div>
+                    <br><br>
+                    <div class="container text-center ">
+                        <button type="button" class="btn btn-primary shadow">Join Servicer</button>
+                    </div>
+                    <br><br>
+
+                    
+                    <div class="container text-left " style="background-image: linear-gradient(to right, rgba(154, 189, 255, 0.199) 1%, rgba(255, 255, 255, 0.13) 99%); border-left-style: solid; border-left-color:rgba(0, 89, 255, 0.74);">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-columns-gap mr-1" viewBox="0 0 16 16">
+                                    <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                                  </svg>
+                                Dashboard
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="container text-left ">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive mr-1" viewBox="0 0 16 16">
+                                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                              Docuements
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="container text-left ">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                              Calendar
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    
+                    <div class="container text-left">
+                        <div class="card" style="border-color: transparent; background-color: transparent; height: 60px;">
+                            <div class="container mt-3" style="font-weight: bolder; color: #757575;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-life-preserver mr-1" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg>
+                              Support
+                            </div>
+                          </div>
+                    </div>
+                  
+
+                </div>
+              </div>
+        </div>
+        <div class="col-10" style="background-color: rgb(246, 246, 250); overflow-y: scroll;">
+            
+            <div class="row" style="background-color: rgba(255, 255, 255);">
+                <div class="col border">
+                         <!-- Navigation Panel -->
+                         <div id="navbar_airblock" class="card " style=" border-radius: 0px; ">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-transparent card" style="border: transparent;">
+                                <div class="row container-fluid">
+                                    <div class="col">
+                                    
+                                            <form class="form-inline">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="color: rgb(188, 193, 197);" class="bi bi-search" viewBox="0 0 16 16">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                </svg>
+                                            </a>
+                                            
+                                            </form>
+                                
+                                    </div>
+                                    <div class="col-5 text-right ">
+                                        <span id="date" style="margin-right: 10px; color:  rgb(145, 150, 153); font-weight: bolder ; font-size: small;"></span>
+                                        <script>
+                                            n =  new Date();
+                                            y = n.getFullYear();
+                                            m = n.getMonth();
+                                            d = n.getDate();
+                                            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                            document.getElementById("date").innerHTML =  d + " "+months[m] + ", " + y;
+                                        </script>
+                            
+                                            <a href="#" class="mx-5"style="text-decoration: none;" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color: rgb(145, 150, 153);" class="bi bi-bell" viewBox="0 0 16 16">
+                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                                </svg>
+                                            </a>
+                                            <a href="servicer_profile.html" style="text-decoration: none;">
+                                                <span class="mx-2 mr-3" style="color: black; font-weight: bolder;">Jack Polish</span>
+                                                <img src="https://www.fulloutcreative.com/wp-content/uploads/2021/04/jericho-lopez-headshot-square.jpg" width="50" class="rounded-circle border" height="50">
+                                            </a>
+                                    
+                                    </div>
+                                </div>
+                                
+                        
+    
+                            
+                            
+                            </nav>
+                        </div>
+
+                </div>
+            </div>
+            <div style="background-color: rgb(246, 246, 250);">
+                <div class=" mt-5 ml-2" style="font-weight: bolder;">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="worker.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                  </svg>
+                            </a>
+                           
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+
+              
+                <div class="card mt-3 border" style="background-color: rgb(252, 252, 255);">
+                    <div class="body">
+                        <div class="row">
+                            <div class="col ml-4 mt-4">
+                                <h5>Join Servicer</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card mx-3 my-3" >
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-2 mt-2 text-center">
+                                        
+                                                <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" id="search_image" height="120" width="120" style="border-radius: 50%;" class="border hover_blur" alt="">
+                                   
+                                            
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputEmail1">Search Servicer</label>
+                                            <div class="form-inline">
+
+                                                <div class="autocomplete" style="width:300px;">
+                                                <input type="text" id="myInput" name="search_list" class="form-control" placeholder="Enter worker's email or ID" style="width: 400px;">
+                                                </div>
+
+                                                <button type="submit" class="btn btn-secondary ml-3">Search</button>
+                                              </div>
+                                              <small id="emailHelp" class="form-text text-muted">You can only join servicer who are registered. You can search servicer's profile by either Email or ID.</small>
+                                             
+                                              <button type="submit" class="btn btn-primary mt-3">Send Invite</button>
+                                        </div>
+                                  
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row my-3 mt-5">
+                        <div class="col">
+                            <p class="ml-3" style="color: #949494;">&#169 Copyright Airblock</p>
+                        </div>
+                        <div class="col" >
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Home</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">About Us</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Contact Us</a>
+                            <a href="#" style="text-decoration: none; color: black;" class="mx-3">Terms and Conditions</a>
+                        </div>
+                    </div>
+            </div>
+
+            
+               
+                
+            
+             
+
+             
+
+
+             
+            
+        </div>
+       
+    </div>
+
+
+    <script>
+        var countries = ["Henry Colin"]
+        var info = {"Henry Colin":"https://chrisreining.com/wp-content/uploads/2017/08/Chris-Reining-01-Square.jpg",}
+
+
+
+        function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              document.getElementById("search_image").setAttribute("src",info[inp.value])
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+});
+}
+
+
+
+
+autocomplete(document.getElementById("myInput"), countries);
+    </script>
+   
+
+
+ 
+        
+
+      
+
+    
+   
+<script>
+
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.0902,-95.7129),
+      zoom:3.5,
+    };
+    const Chicago = { lat: 45.8781, lng: -87.6298 };
+
+    
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+     // The marker, positioned at Chicago
+     const marker = new google.maps.Marker({
+          position: Chicago,
+          map: map,
+        });
+
+        const LA = { lat: 34.0522, lng: -118.2437 };
+         // The marker, positioned at LA
+     const marker1 = new google.maps.Marker({
+          position: LA,
+          map: map,
+        });
+
+        const MK1 = { lat: 20.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker2 = new google.maps.Marker({
+          position: MK1,
+          map: map,
+        });
+
+
+        const MK2 = { lat: 40.0522, lng: -90.2437 };
+         // The marker, positioned at LA
+     const marker3 = new google.maps.Marker({
+          position: MK2,
+          map: map,
+        });
+
+  
+        myMap3();
+        myMap4();
+    }
+    function myMap3() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.0902,-95.7129),
+      zoom:3.5,
+    };
+    const Chicago = { lat: 45.8781, lng: -87.6298 };
+
+    
+
+    var map = new google.maps.Map(document.getElementById("googleMap3"),mapProp);
+
+
+     // The marker, positioned at Chicago
+     const marker = new google.maps.Marker({
+          position: Chicago,
+          map: map,
+        });
+
+       
+    }
+
+    function myMap4() {
+        var mapProp= {
+          center:new google.maps.LatLng(37.0902,-95.7129),
+          zoom:3.5,
+        };
+        const Chicago = { lat: 45.8781, lng: -87.6298 };
+    
+        
+    
+        var map = new google.maps.Map(document.getElementById("googleMap4"),mapProp);
+    
+    
+         // The marker, positioned at Chicago
+         const marker = new google.maps.Marker({
+              position: Chicago,
+              map: map,
+            });
+    
+           
+        }
+
+</script>
+
+
+<script>
+    // search 
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup7xUJNKbH4Wcwhb4_Gglx-7MK5YmvxU&callback=myMap"></script>
+
+    <!-- Javascripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="../static/js/airblock.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
