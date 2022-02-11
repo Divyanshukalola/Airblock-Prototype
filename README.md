@@ -32,7 +32,7 @@ This is the airblock prototype
 5. `servicer_team.html` : Shows the team dashboard for servicer
 6. `worker_team.html` : Shows the team dashboard for worker
 
-## How to run
+## :arrow_forward: How to run
 ### If you are using python environment or vscode
 1. Enter the following `python -m SimpleHTTPServer 8000`
 
