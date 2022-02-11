@@ -41,7 +41,7 @@ This is the airblock prototype
 2. Right click and select 'open with'. 
 3. Select your prefered browser to open the files.
 
-## Copy Rights
+## :copyright: Copy Rights
 > This repository and the code in this repository is private. If you think you have mistakenly achieved the access to this repository please make sure to delete or contact the owner of the repository to check your access.
 ### Usage
 > If you are legally authorised to use this repository please make sure not to share the code. This code is solely the property of owner.
