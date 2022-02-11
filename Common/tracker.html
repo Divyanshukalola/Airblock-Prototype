@@ -291,7 +291,7 @@
                                   
                                         <div class="row">
                                             <div class="col text-center">
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#mr">Create the Maintenance request</button>
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Create the Upkeep request</button>
                                             </div>
                                           
                                           
@@ -302,13 +302,139 @@
                                     </div>
                                   
                                 </div>
+                                <!-- select type of request  -->
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Select Request type</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="row">
+                                            <div class="col text-center">
+                                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mri">Internal</button>
+                                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mr">External</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                <!-- Create maintanence internal request -->
+                                <div class="modal fade" id="mri" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content ">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create the Upkeep request</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Select Upkeep Type</h5>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Inspection</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Mantenence</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Calibration</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Repair</label>
+                                            </div>
+                                     
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><b>Return period: </b></h6>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="# of days">
+                                                      </div>
+
+                                                      <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                                        <label class="form-check-label" for="exampleCheck1">Flexible</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Hard</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><b>Additional Comments: </b></h6>
+                                                    <div class="form-group">
+                                                        
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <a href="#">link to tool repository 
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right mx-2" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                                      </svg></a>
+                                                    
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" data-dismiss="modal">Create Request</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- notify internal request  -->
+                                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Notification sent</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <h5>Please Note</h5>
+                                          <small>The Notification is been sent to the internal servicer for further approval.</small>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
 
                                 <!-- Create maintanence request -->
                                 <div class="modal fade" id="mr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content ">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Create the Maintenance request</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Create the Upkeep request</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -391,11 +517,11 @@
                                                       </div>
 
                                                       <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
                                                         <label class="form-check-label" for="exampleCheck1">Flexible</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
                                                         <label class="form-check-label" for="exampleCheck1">Hard</label>
                                                     </div>
                                                 </div>
