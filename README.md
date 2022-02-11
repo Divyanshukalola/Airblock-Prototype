@@ -37,7 +37,6 @@ This is the airblock prototype
 1. Enter the following `python -m SimpleHTTPServer 8000`
 
 ### Using web browser
-> ![This is an image](https://www.freeiconspng.com/thumbs/google-chrome-icon/google-chrome-icon-22.png)
 
 1. Go to commons/owner/server's folder. 
 2. Right click and select 'open with'. 
