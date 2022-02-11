@@ -14,6 +14,7 @@ This is the airblock prototype
 > Enter the following `python -m SimpleHTTPServer 8000`
 
 ### Using web browser
-> Go to commons/owner/server's folder. 
-Right click and select 'open with'. 
-Select your prefered browser to open the files.
+> 
+1. Go to commons/owner/server's folder. 
+2. Right click and select 'open with'. 
+3. Select your prefered browser to open the files.
