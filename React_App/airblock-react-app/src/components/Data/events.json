@@ -1,0 +1,62 @@
+[
+  {
+    "type": "twitter",
+    "author": { "name": "Anja", "url": "https://twitter.com/Lumarycodes" },
+    "url": "https://twitter.com/Lumarycodes/status/1472117629032837121",
+    "title": "Want to switch careers into tech?",
+    "start": "2021-12-19T15:00:00+00:00",
+    "end": "2021-12-19T16:00:00+00:00",
+    "description": "Want to switch careers into tech?"
+  },
+  {
+    "type": "discord",
+    "author": { "name": "EddieHubCommunity", "url": "http://eddiehub.org" },
+    "url": "http://discord.eddiehub.org",
+    "title": "An inclusive and safe space where people of all technical abilities are encouraged to join.",
+    "start": "2021-11-20T15:06:30+05:30",
+    "end": "2021-11-20T16:07:30+05:30",
+    "description": "Eddie and his Mods host a multi community audio call on Discord. Everyone is welcome to join."
+  },
+  {
+    "type": "discord",
+    "author": { "name": "EddieHubCommunity", "url": "http://eddiehub.org" },
+    "url": "http://discord.eddiehub.org",
+    "title": "Practice, share and learn public speaking skills in a safe and welcoming environment.",
+    "start": "2021-11-20T15:06:30+05:30",
+    "end": "2021-11-20T16:07:30+05:30",
+    "description": "Practice, share and learn public speaking skills in a safe and welcoming environment. Join this inclusive audio only call in our Discord, organised and managed by community members"
+  },
+  {
+    "type": "discord",
+    "author": {
+      "name": "Eddie Jaoude",
+      "url": "http://twitter.com/eddiejaoude"
+    },
+    "url": "https://www.eddiehub.org/centered-signup",
+    "title": "FOCUS, GET THINGS DONE & HAVE A BREAK WITH EddieHub + Centered",
+    "start": "2021-11-20T15:00:00+00:00",
+    "end": "2021-11-20T16:00:00+00:00",
+    "description": "Do you keep getting distracted and not finishing your tasks?  Maybe you are a project maintainer and need to get through your GitHub notifications, you might be freelancing for a client or you might have course work or exam preparation to do. Let's get totally absorbed in our tasks together and be more productive, with the help of Centered! When it is time for a break, we will jump on an exclusive Discord audio call and chat."
+  },
+  {
+    "type": "youtube",
+    "author": { "name": "Eddie Jaoude", "url": "http://eddiejaoude.io" },
+    "url": "https://www.youtube.com/watch?v=KU3aLQ_3ok0",
+    "title": "Refactoring Markdown to Fullstack NextJS app using Gitpod",
+    "start": "2021-12-17T16:00:00+00:00",
+    "end": "2021-12-17T18:00:00+00:00",
+    "description": "Refactoring Markdown to Fullstack NextJS app using Gitpod"
+  },
+  {
+    "type": "youtube",
+    "author": {
+      "name": "Francesco Ciulla",
+      "url": "http://twitter.com/FrancescoCiull4"
+    },
+    "url": "https://www.youtube.com/watch?v=az-ILjdFCe8",
+    "title": "4C Website - Let's code it",
+    "start": "2021-11-20T15:00:00+08:00",
+    "end": "2021-11-20T16:00:00+08:00",
+    "description": "The second episode of me coding the 4C Website live"
+  }
+]

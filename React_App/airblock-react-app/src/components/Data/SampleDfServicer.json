@@ -1,0 +1,23 @@
+[
+        {
+            "name":"John Twombly",
+            "location":"Chicago",
+            "AvgPropTime":"15 Days",
+            "AvgPropCost":"$3000",
+            "email":"jtwombly@123.com"
+        },
+        {
+            "name":"Anwar Adam",
+            "location":"NYC",
+            "AvgPropTime":"10 Days",
+            "AvgPropCost":"$1000",
+            "email":"aadam@123.com"
+        },
+        {
+            "name":"Dhruv Khulcha",
+            "location":"Austin",
+            "AvgPropTime":"45 Days",
+            "AvgPropCost":"$4500",
+            "email":"dkhulcha@123.com"
+        }
+]

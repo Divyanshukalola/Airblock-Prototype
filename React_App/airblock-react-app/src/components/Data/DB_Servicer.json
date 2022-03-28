@@ -1,0 +1,43 @@
+[
+  {
+    "Servicer": [
+      {
+        "Servicer_ID": "110",
+        "email": "henryc@abc.com",
+        "img": "https://chrisreining.com/wp-content/uploads/2017/08/Chris-Reining-01-Square.jpg",
+        "first_name": "Henry",
+        "last_name": "Colin",
+        "DOB": "12/12/1969",
+        "Gender": "Male",
+        "phone_number": "3121234657",
+        "organization": "AIC",
+        "liscense_type": "A",
+        "liscense_number": "12345ABCD",
+        "exp_date": "12/20/2024",
+        "liscense_photo": "null",
+        "hiring_date": "null",
+        "work_location": "Chicago, IL",
+        "about_project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus a interdum finibus, ante est condimentum lorem, in eleifend massa odio eget libero. Praesent ultricies porta ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ligula ligula, cursus sed neque a, ornare ultricies felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ut magna ligula. Vivamus erat est, consequat vitae lectus at, pharetra efficitur augue. Praesent non vehicula sem. Aenean eget quam et sapien semper elementum non eu mi.",
+        "project_status": "S3",
+        "profession": "null",
+        "country_of_birth": "null",
+        "city_of_birth": "null",
+        "health_insurance": "null",
+        "retirement_insurance": "null",
+        "address": "null",
+        "Team": [
+          {
+            "Worker_ID": "169"
+          },
+          {
+            "Worker_ID": "171"
+          },
+          {
+            "Worker_ID": "170"
+          }
+        ],
+        "Projects": [{ "Project_ID": "1234ABCD" }, { "Project_ID": "1234EFGH" }]
+      }
+    ]
+  }
+]

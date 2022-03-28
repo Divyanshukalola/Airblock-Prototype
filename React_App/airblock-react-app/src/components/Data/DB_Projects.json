@@ -1,0 +1,142 @@
+[
+  {
+    "projects": [
+      {
+        "Project_ID": "1234ABCD",
+        "Name": "Engine Repair - Aircraft Boing 7474",
+        "Client_ID": "923457ABC",
+        "Start_date": "12/1/2020",
+        "Exp_end_date": "12/12/2021",
+        "Managed_by": "Henry Colin",
+        "Stage": "S4",
+        "Status": "completed",
+        "Last_update": "This is my latest Update",
+        "Last_update_date": "11/2/2021",
+        "Update_brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus sem, finibus ac augue vel, efficitur lacinia neque. Vestibulum neque nibh, volutpat ut rhoncus ac, varius eget velit. Vestibulum in risus sit amet magna vestibulum fermentum vitae nec orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ornare porttitor ultrices.",
+        "Scheduled": "12/1/2020",
+        "Work_started": "1/23/2021",
+        "Final_checks": "11/29/2021",
+        "Completed": "12/1/2021",
+        "Updates": [
+          {
+            "Update_ID": "123",
+            "Brief": "This is the update Brief for update 1.",
+            "Start_Date": "1/2/2021",
+            "End_Date": "1/25/2021",
+            "Update_by": "Jack Polish #169",
+            "Update_worker_ID": "169",
+            "mark": "show",
+            "Supporting_doc": [
+              {
+                "Type": "img",
+                "Title": "Image 1",
+                "Description": "This is the sample description for the doc 1",
+                "URL": "https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97.jpg"
+              },
+              {
+                "Type": "doc",
+                "Title": "Document 1",
+                "Description": "This is the sample description for the doc 2",
+                "URL": "http://www.africau.edu/images/default/sample.pdf#toolbar=0"
+              }
+            ]
+          },
+          {
+            "Update_ID": "456",
+            "Brief": "This is the update Brief for update 2.",
+            "Start_Date": "3/29/2021",
+            "End_Date": "4/19/2021",
+            "Update_worker_ID": "171",
+            "Update_by": "Jacob Pola #171",
+            "mark": "show",
+
+            "Supporting_doc": [
+              {
+                "Type": "img",
+                "Title": "Image 2",
+                "Description": "This is the sample description for the doc 1",
+                "URL": "https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97.jpg"
+              },
+              {
+                "Type": "doc",
+                "Title": "Document 2",
+                "Description": "This is the sample description for the doc 2",
+                "URL": "http://www.africau.edu/images/default/sample.pdf#toolbar=0"
+              }
+            ]
+          }
+        ],
+        "Workers": [
+          {
+            "Worker_ID": "169"
+          },
+          {
+            "Worker_ID": "171"
+          }
+        ]
+      },
+      {
+        "Project_ID": "1234EFGH",
+        "Name": "Wing Maintenance - Aircraft Boing 777",
+        "Client_ID": "123456ABC",
+        "Start_date": "11/10/2021",
+        "Exp_end_date": "12/12/2023",
+        "Managed_by": "Henry Colin",
+        "Stage": "S1",
+        "Status": "ongoing",
+        "Last_update": "This is my latest Update",
+        "Last_update_date": "11/2/2021",
+        "Update_brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus sem, finibus ac augue vel, efficitur lacinia neque. Vestibulum neque nibh, volutpat ut rhoncus ac, varius eget velit. Vestibulum in risus sit amet magna vestibulum fermentum vitae nec orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ornare porttitor ultrices.",
+        "Scheduled": "11/10/2021",
+        "Work_started": "12/20/2021",
+        "Final_checks": "11/29/2023",
+        "Completed": "12/12/2023",
+        "Updates": [
+          {
+            "Update_ID": "123",
+            "Brief": "This is the update Brief for update 1.",
+            "Start_Date": "1/2/2022",
+            "End_Date": "1/25/2022",
+            "Update_by": "Jason Scott #170",
+            "Update_worker_ID": "170",
+            "mark": "show",
+            "Supporting_doc": [
+              {
+                "Type": "img",
+                "Title": "Image 1",
+                "Description": "This is the sample description for the doc 1",
+                "URL": "https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97.jpg"
+              }
+            ]
+          },
+          {
+            "Update_ID": "456",
+            "Brief": "This is the update Brief for update 2.",
+            "Start_Date": "3/29/2022",
+            "End_Date": "4/19/2022",
+            "Update_worker_ID": "170",
+            "Update_by": "Jason Scott #170",
+            "mark": "show",
+
+            "Supporting_doc": [
+              {
+                "Type": "doc",
+                "Title": "Document 2",
+                "Description": "This is the sample description for the doc 2",
+                "URL": "http://www.africau.edu/images/default/sample.pdf#toolbar=0"
+              }
+            ]
+          }
+        ],
+        "Workers": [
+          {
+            "Worker_ID": "170"
+          },
+          {
+            "Worker_ID": "169"
+          }
+        ]
+      }
+    ]
+  }
+]
